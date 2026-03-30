@@ -1,0 +1,366 @@
+{
+  "site": {
+    "name": "YuDevelopment",
+    "tagline": "the company that builds companies"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Home",
+        "href": "#"
+      },
+      {
+        "label": "Who We Are",
+        "href": "#who-we-are"
+      },
+      {
+        "label": "Our Companies",
+        "href": "#companies"
+      },
+      {
+        "label": "People",
+        "href": "/people"
+      }
+    ],
+    "cta": {
+      "label": "JOIN OUR TEAM",
+      "href": "/careers"
+    }
+  },
+  "hero": {
+    "headline": "the company that\nbuilds companies",
+    "scrollLabel": "Explore",
+    "image": ""
+  },
+  "whoWeAre": {
+    "paragraph1": "YuDevelopment is the operational and strategic engine behind the companies in our ecosystem. We build the systems, teams, and processes that keep each business running smoothly and growing quickly.",
+    "paragraph2": "YuDevelopment works inside the companies we support, helping them operate more efficiently and scale with clarity.",
+    "ctaLabel": "View Open Roles",
+    "ctaHref": "/careers"
+  },
+  "companies": [
+    {
+      "id": "ahs",
+      "name": "Atlanta HOA Services",
+      "logo": "AHS",
+      "logoColor": "#b8860b",
+      "logoImage": "",
+      "link": "",
+      "description": "Atlanta HOA Services manages and maintains communities across Georgia with a focus on reliability and quick execution. Our team handles repairs, maintenance, vendor coordination, and day-to-day operations so homeowners can rely on clean, safe, and well-run communities.",
+      "carouselImage": "",
+      "carouselTitle": "Atlanta HOA",
+      "carouselDate": "March 10",
+      "carouselCaption": ""
+    },
+    {
+      "id": "yud",
+      "name": "Yu Development",
+      "logo": "YD",
+      "logoColor": "#f59e0b",
+      "logoImage": "",
+      "link": "",
+      "description": "Yu Development is our predevelopment and deal-sourcing company. We find land, run the numbers, work with cities, and prepare each project for construction. The team handles the early work that turns raw land into real developments and future communities.",
+      "carouselImage": "",
+      "carouselTitle": "Yu Development",
+      "carouselDate": "",
+      "carouselCaption": ""
+    },
+    {
+      "id": "jdy",
+      "name": "JustDoYu",
+      "logo": "JUSTDOYU",
+      "logoColor": "#111111",
+      "logoImage": "",
+      "link": "",
+      "description": "JustDoYu is our media and content arm. We create educational and behind-the-scenes content that shows how real development and real operations work. The goal is simple: share what we build, attract the right people, and document the journey.",
+      "carouselImage": "",
+      "carouselTitle": "",
+      "carouselDate": "",
+      "carouselCaption": ""
+    },
+    {
+      "id": "tnw",
+      "name": "TrueNorthWay",
+      "logo": "TRUENORTHWAY",
+      "logoColor": "#111111",
+      "logoImage": "",
+      "link": "",
+      "description": "Vertically integrated Attainable Housing Real Estate Developer with 7 years entitling, construction, and managing their projects.",
+      "carouselImage": "",
+      "carouselTitle": "",
+      "carouselDate": "",
+      "carouselCaption": ""
+    }
+  ],
+  "vision": {
+    "sectionLabel": "OUR VISION",
+    "text": "Our vision is to build strong companies by building a strong team. When we get the people and systems right, we can grow any business and expand into any industry.",
+    "quote": "With the right team, we can build anything.",
+    "quoteAuthor": "George Yu"
+  },
+  "pillars": [
+    {
+      "num": "01",
+      "icon": "✦",
+      "title": "Communication",
+      "description": "Speed comes from clarity. We write things down, share context early, and make sure the whole team can move without waiting for answers. Information flows here, fast and clear."
+    },
+    {
+      "num": "02",
+      "icon": "🚀",
+      "title": "Determination",
+      "description": "We finish what we start. Obstacles are expected, not excuses. When you own something at YuDevelopment, you're accountable for the outcome, and we give you the authority to drive it."
+    },
+    {
+      "num": "03",
+      "icon": "👥",
+      "title": "Proactiveness",
+      "description": "The best teams don't wait to be managed. We spot issues before they escalate, take initiative within our scope, and solve problems early. Reactive isn't in our DNA."
+    },
+    {
+      "num": "04",
+      "icon": "⚡",
+      "title": "Speed",
+      "description": "We move with urgency. Decisions are made fast, feedback is given immediately, and we ship before it's perfect rather than wait for it to be perfect before we ship."
+    },
+    {
+      "num": "05",
+      "icon": "◎",
+      "title": "Focus",
+      "description": "We don't chase everything. We identify the highest-leverage work, say no to distractions, and go deep on what actually moves the needle for the business."
+    },
+    {
+      "num": "06",
+      "icon": "↗",
+      "title": "Growth",
+      "description": "Everyone here is expected to grow — in skill, in role, in impact. We invest in our team because building great companies requires building great people."
+    }
+  ],
+  "departments": [
+    {
+      "id": "hr",
+      "icon": "</>",
+      "label": "Human Resources",
+      "title": "Human Resources",
+      "description": "Human Resources focuses on building strong teams for both YuDevelopment and the companies it supports. This department manages hiring pipelines, job descriptions, interview processes, onboarding, role clarity, team structure, and talent evaluation. The team also helps shape company culture and ensures that organizations have the right people in the right positions."
+    },
+    {
+      "id": "ops",
+      "icon": "⚙",
+      "label": "Operations",
+      "title": "Operations",
+      "description": "Operations is the backbone of execution across the portfolio. This department designs the processes, workflows, and systems that keep each company moving without friction. From daily task management to cross-company coordination, Operations ensures that work gets done at a high standard, on time, and with clear accountability."
+    },
+    {
+      "id": "admin",
+      "icon": "◎",
+      "label": "Administration",
+      "title": "Administration",
+      "description": "Administration handles the structural and organizational functions that support every company in the ecosystem. This includes legal coordination, compliance, documentation, executive support, and the administrative infrastructure needed to keep businesses running cleanly and professionally."
+    },
+    {
+      "id": "sales",
+      "icon": "↗",
+      "label": "Sales & Marketing",
+      "title": "Sales & Marketing",
+      "description": "Sales & Marketing drives revenue and brand awareness across the portfolio. This team develops go-to-market strategies, manages client relationships, creates marketing assets, and runs campaigns that generate leads and close deals. They work closely with each company to align messaging with business goals."
+    },
+    {
+      "id": "fin",
+      "icon": "◎",
+      "label": "Finance & Accounting",
+      "title": "Finance & Accounting",
+      "description": "Finance & Accounting manages the financial health of each company in the ecosystem. This includes budgeting, bookkeeping, financial reporting, cash flow management, and strategic financial planning. The team ensures that every business has a clear picture of its numbers and is operating with financial discipline."
+    }
+  ],
+  "team": [
+    {
+      "name": "George Yu",
+      "role": "Founder & CEO",
+      "initials": "GY",
+      "photo": ""
+    },
+    {
+      "name": "Sarah Lin",
+      "role": "Chief Operating Officer",
+      "initials": "SL"
+    },
+    {
+      "name": "Marcus Thompson",
+      "role": "VP of Operations",
+      "initials": "MT"
+    },
+    {
+      "name": "Priya Patel",
+      "role": "Head of Finance",
+      "initials": "PP"
+    },
+    {
+      "name": "James Washington",
+      "role": "Director of HR",
+      "initials": "JW"
+    },
+    {
+      "name": "Amy Chen",
+      "role": "Head of Marketing",
+      "initials": "AC"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Atlanta HOA Services landscaping for Fairfield by Marriott Inn & Suites Alpharetta Avalon Area",
+      "date": "November 2025",
+      "excerpt": "AHS stepped in to help the hotel owners with site work and landscaping after months of failure to pass local county inspections.",
+      "bgColor": "#4a5c4a"
+    },
+    {
+      "id": "2",
+      "title": "TrueNorthWay Completed Platform Douglas",
+      "date": "December 2025",
+      "excerpt": "Platform Douglas — Douglas, GA. 126 units completed Dec 2025. A new-construction multifamily community delivering attainable, quality housing in a growing regional market.",
+      "bgColor": "#5a6a7a"
+    },
+    {
+      "id": "3",
+      "title": "TrueNorthWay Expands into New Markets",
+      "date": "January 2026",
+      "excerpt": "Platform Douglas continues to grow as TrueNorthWay expands its attainable housing footprint across the Southeast.",
+      "bgColor": "#6a5a7a"
+    }
+  ],
+  "footer": {
+    "address": "Atlanta, GA 30303",
+    "phone": "(555) 123-4567",
+    "email": "careers@yudevelopment.com",
+    "copyright": "© 2025 YuDevelopment. All rights reserved."
+  },
+  "careers": {
+    "headline": "Careers at YGCCC",
+    "description": "We look for people who want to do their best work and grow with us. Join a team that values initiative, clarity, and real impact, and help build companies that last.",
+    "whyJoin": [
+      {
+        "num": "01",
+        "icon": "⚡",
+        "title": "Real Impact From Day One",
+        "description": "You will not be stuck watching from the sidelines. You will take on real projects, contribute to decisions, and see the direct impact of your work immediately."
+      },
+      {
+        "num": "02",
+        "icon": "💼",
+        "title": "Grow Faster Than in Traditional Roles",
+        "description": "We move quickly and give responsibility early. If you show initiative and produce results, you will advance based on performance, not seniority."
+      },
+      {
+        "num": "03",
+        "icon": "🎯",
+        "title": "Work That's Meaningful",
+        "description": "The work you do will directly support companies that improve people's lives, from housing to community services to new ventures."
+      },
+      {
+        "num": "04",
+        "icon": "👥",
+        "title": "A Team That Wants You to Win",
+        "description": "You will be surrounded by people who communicate openly, support each other, and step in when needed. We value proactiveness and resourcefulness, but no one here is expected to figure everything out alone."
+      }
+    ],
+    "roles": [
+      {
+        "id": "1",
+        "title": "HR Manager",
+        "department": "Human Resources",
+        "type": "Full-Time",
+        "location": "Atlanta, GA",
+        "applyLink": "mailto:careers@ygccc.com?subject=HR Manager Application",
+        "description": "Own all hiring, onboarding, and people operations for the entire YGCCC ecosystem. Build structure, processes, and clarity so the company can scale rapidly.",
+        "requirements": [
+          "Strong English communication",
+          "2+ years HR or people operations experience",
+          "Highly organized and systems-oriented",
+          "Able to manage recruiters and multiple roles at once",
+          "Comfortable working in a fast-paced startup environment"
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Recruiter",
+        "department": "Human Resources",
+        "type": "Full-Time",
+        "location": "Atlanta, GA",
+        "applyLink": "mailto:careers@ygccc.com?subject=Recruiter Application",
+        "description": "Source, screen, and deliver qualified candidates across multiple roles. Maintain a fast, organized hiring pipeline and support the HR Manager.",
+        "requirements": [
+          "Experience sourcing and screening candidates",
+          "Excellent written and verbal English",
+          "Able to follow strict processes and job descriptions",
+          "Highly responsive and organized",
+          "Familiarity with remote recruiting"
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Fractional CFO",
+        "department": "Finance & Accounting",
+        "type": "Full-Time",
+        "location": "Atlanta, GA",
+        "applyLink": "mailto:careers@ygccc.com?subject=Fractional CFO Application",
+        "description": "Build the financial infrastructure for a multi-entity organization. Oversee reporting, cash flow, controls, and financial strategy across several companies.",
+        "requirements": [
+          "3-5+ years financial leadership experience",
+          "Strong multi-entity accounting knowledge",
+          "Ability to build financial systems and controls",
+          "Strong analytical and forecasting skills",
+          "Experience with fast-growing or founder-led companies"
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Project Manager / Coordinator",
+        "department": "Administration",
+        "type": "Full-Time",
+        "location": "Atlanta, GA",
+        "applyLink": "mailto:careers@ygccc.com?subject=Project Manager Application",
+        "description": "Support leadership by managing internal projects, keeping timelines on track, and coordinating communication across multiple companies.",
+        "requirements": [
+          "Strong organizational and project management skills",
+          "Excellent communication and follow-through",
+          "Ability to coordinate across multiple teams",
+          "Comfortable executing founder-driven priorities",
+          "Fast learner who can create structure independently"
+        ]
+      },
+      {
+        "id": "5",
+        "title": "Operations Manager",
+        "department": "Operations",
+        "type": "Full-Time",
+        "location": "Atlanta, GA",
+        "applyLink": "mailto:careers@ygccc.com?subject=Operations Manager Application",
+        "description": "Design and manage the processes, systems, and workflows that keep each company running efficiently. Own cross-company coordination and execution standards.",
+        "requirements": [
+          "3+ years in operations or business management",
+          "Experience building SOPs and workflows",
+          "Strong problem-solving and accountability mindset",
+          "Able to manage multiple priorities across teams",
+          "Comfortable with fast-moving environments"
+        ]
+      },
+      {
+        "id": "6",
+        "title": "Marketing Associate",
+        "department": "Sales & Marketing",
+        "type": "Full-Time",
+        "location": "Atlanta, GA",
+        "applyLink": "mailto:careers@ygccc.com?subject=Marketing Associate Application",
+        "description": "Support the sales and marketing team in driving brand awareness and lead generation across the YGCCC portfolio of companies.",
+        "requirements": [
+          "Experience with digital marketing or content creation",
+          "Strong writing and communication skills",
+          "Able to manage multiple campaigns simultaneously",
+          "Familiarity with social media platforms",
+          "Self-starter with an eye for design and messaging"
+        ]
+      }
+    ]
+  }
+}

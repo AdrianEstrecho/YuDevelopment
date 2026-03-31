@@ -3,8 +3,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import AdminShortcut from '@/components/AdminShortcut'
 
-export default function SiteLayout({ children }: { children: React.ReactNode }) {
-  const cms = getCMS()
+export default async function SiteLayout({ children }: { children: React.ReactNode }) {
+  const cms = await getCMS()
   return (
     <>
       <AdminShortcut />

@@ -6,8 +6,8 @@ import ScrollRevealText from '@/components/ScrollRevealText'
 
 export const dynamic = 'force-dynamic'
 
-export default function HomePage() {
-  const cms = getCMS()
+export default async function HomePage() {
+  const cms = await getCMS()
 
 
   return (

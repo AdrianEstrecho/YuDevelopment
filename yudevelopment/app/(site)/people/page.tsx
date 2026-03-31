@@ -1,8 +1,8 @@
 import { getCMS } from '@/lib/cms'
 export const dynamic = 'force-dynamic'
 
-export default function PeoplePage() {
-  const cms = getCMS()
+export default async function PeoplePage() {
+  const cms = await getCMS()
   return (
     <>
       <section style={{ background: '#000', paddingTop: 56, minHeight: '45vh', display: 'flex', alignItems: 'flex-end', padding: '56px 64px 64px' }}>

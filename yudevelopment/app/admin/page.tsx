@@ -99,11 +99,16 @@ export default function CMSPage() {
     setStatus('saving')
     try {
       const r = await fetch('/api/cms', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(cms) })
-      if (!r.ok) throw new Error()
+      if (!r.ok) {
+        const err = await r.json().catch(() => ({}))
+        console.error('CMS save failed:', err)
+        throw new Error(err.error || 'Save failed')
+      }
       setStatus('saved')
-      if (iframeRef.current) iframeRef.current.contentWindow?.location.reload()
+      try { iframeRef.current?.contentWindow?.location.reload() } catch {}
       setTimeout(() => setStatus('idle'), 3000)
-    } catch {
+    } catch (e) {
+      console.error('Save error:', e)
       setStatus('error')
       setTimeout(() => setStatus('idle'), 3000)
     }

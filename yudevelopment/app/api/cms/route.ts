@@ -18,10 +18,6 @@ export async function POST(req: NextRequest) {
     await saveCMS(body)
     return NextResponse.json({ ok: true })
   } catch (e) {
-    return NextResponse.json({
-      error: String(e),
-      hasToken: !!process.env.BLOB_READ_WRITE_TOKEN,
-      isVercel: !!process.env.VERCEL,
-    }, { status: 500 })
+    return NextResponse.json({ error: String(e) }, { status: 500 })
   }
 }

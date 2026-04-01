@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { put } from '@vercel/blob'
+import { sanity } from '@/lib/sanity'
 import { writeFile, mkdir } from 'fs/promises'
 import path from 'path'
+
+const useSanity = () =>
+  !!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID && !!process.env.SANITY_API_TOKEN
 
 export async function POST(req: NextRequest) {
   try {
@@ -12,13 +15,14 @@ export async function POST(req: NextRequest) {
     const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, '_')
     const filename = `${Date.now()}-${safeName}`
 
-    // Production: upload to Vercel Blob
-    if (process.env.BLOB_READ_WRITE_TOKEN) {
-      const blob = await put(`uploads/${filename}`, file, {
-        access: 'public',
+    // Production: upload to Sanity assets
+    if (useSanity()) {
+      const buffer = Buffer.from(await file.arrayBuffer())
+      const asset = await sanity.assets.upload('image', buffer, {
+        filename,
         contentType: file.type,
       })
-      return NextResponse.json({ url: blob.url })
+      return NextResponse.json({ url: asset.url })
     }
 
     // Dev: save to local filesystem
@@ -28,7 +32,7 @@ export async function POST(req: NextRequest) {
     await mkdir(uploadsDir, { recursive: true })
     await writeFile(path.join(uploadsDir, filename), buffer)
     return NextResponse.json({ url: `/uploads/${filename}` })
-  } catch {
-    return NextResponse.json({ error: 'Upload failed' }, { status: 500 })
+  } catch (e) {
+    return NextResponse.json({ error: String(e) }, { status: 500 })
   }
 }

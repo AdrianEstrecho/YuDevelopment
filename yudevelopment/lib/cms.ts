@@ -1,21 +1,23 @@
 import fs from 'fs'
 import path from 'path'
-import { put, list } from '@vercel/blob'
+import { sanity } from './sanity'
 
 const FILE = path.join(process.cwd(), 'lib', 'cms-data.json')
-const BLOB_KEY = 'cms-data.json'
+const DOC_ID = 'siteContent'
+
+const useSanity = () =>
+  !!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID && !!process.env.SANITY_API_TOKEN
 
 export async function getCMS() {
-  // Production: read from Vercel Blob
-  if (process.env.BLOB_READ_WRITE_TOKEN) {
+  if (useSanity()) {
     try {
-      const { blobs } = await list({ prefix: BLOB_KEY, limit: 1 })
-      if (blobs.length > 0) {
-        const res = await fetch(blobs[0].url + '?t=' + Date.now(), { cache: 'no-store' })
-        if (res.ok) return res.json()
-      }
+      const doc = await sanity.fetch(
+        `*[_id == $id][0].data`,
+        { id: DOC_ID }
+      )
+      if (doc) return doc
     } catch {}
-    // First deploy: no blob yet, seed from local file
+    // First run: no doc yet, seed from local file
     try {
       const raw = fs.readFileSync(FILE, 'utf-8')
       return JSON.parse(raw)
@@ -28,12 +30,11 @@ export async function getCMS() {
 }
 
 export async function saveCMS(data: object) {
-  // Production: save to Vercel Blob only, skip filesystem
-  if (process.env.BLOB_READ_WRITE_TOKEN) {
-    await put(BLOB_KEY, JSON.stringify(data, null, 2), {
-      access: 'public',
-      contentType: 'application/json',
-      addRandomSuffix: false,
+  if (useSanity()) {
+    await sanity.createOrReplace({
+      _id: DOC_ID,
+      _type: 'siteContent',
+      data,
     })
     return
   }

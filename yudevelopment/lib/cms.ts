@@ -11,7 +11,7 @@ const useSanity = () =>
 export async function getCMS() {
   if (useSanity()) {
     try {
-      const doc = await sanity.fetch(
+      const doc = await sanity().fetch(
         `*[_id == $id][0].data`,
         { id: DOC_ID }
       )
@@ -31,7 +31,7 @@ export async function getCMS() {
 
 export async function saveCMS(data: object) {
   if (useSanity()) {
-    await sanity.createOrReplace({
+    await sanity().createOrReplace({
       _id: DOC_ID,
       _type: 'siteContent',
       data,

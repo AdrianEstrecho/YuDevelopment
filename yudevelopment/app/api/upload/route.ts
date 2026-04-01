@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     // Production: upload to Sanity assets
     if (useSanity()) {
       const buffer = Buffer.from(await file.arrayBuffer())
-      const asset = await sanity.assets.upload('image', buffer, {
+      const asset = await sanity().assets.upload('image', buffer, {
         filename,
         contentType: file.type,
       })
